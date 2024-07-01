@@ -1,1 +1,0 @@
-{'side': 5, 'left_corner': [1, 2]}
