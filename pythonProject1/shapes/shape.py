@@ -1,7 +1,8 @@
 class Shape:
     def show(self):
-        for m in vars(self).items():
-            print(m)
+        info = vars(self)
+        for m in info.keys():
+            print(f"{m}: {info[m]}")
     def save(self):
         file = open(f'shapes/saves/{self.__class__.__name__}.txt', 'w')
         file.write(str(vars(self)))
